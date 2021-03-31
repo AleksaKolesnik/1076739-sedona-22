@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academy Sedona review</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="header-logo header-position">
+      <img src="img/logotype-mobile.svg.png" class = "logo-small" alt="">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__burger" type = "button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list main-nav__wrapper">
+        <li class="main-nav__item">
+          <a href="#" >Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Фото и Видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="review">
+    <!--блок с картинкой и названием сайта-->
+    <div class="page-poster page-poster-small"> 
+      <svg class="page-poster__title" src="img/SEDONA.svg">
+      </svg>  
+  </div>
+    <h1 class="review__title">Оставьте свой отзыв</h1>
+    <p class="review__subtitle">Помогите нашим отелям стать лучше! оставте отзыв о них.  также о посещенных вами достопримечательностях</p>
+    <div class="form-review_wrapper">
+      <form action="" class="form-review">
+        <!--Поля с именем пользователя-->
+        <fieldset class="fieldset fieldset__user-name">
+          <legend class="fieldset__title">Представьтесь</legend>
+          <label class="fieldset__label" for="reviewName">
+            <span>Имя</span>
+            <input class="fieldset__input" type="text" id="reviewName" placeholder="Петр">
+          </label>
+          <label class="fieldset__label" for="surName">
+            <span>Фамилия</span>
+            <input class="fieldset__input" type="text" id="surName" placeholder="Иванов">
+          </label>
+          <label class="fieldset__label" for="patronymic">
+            <span>Отчество</span>
+            <input class="fieldset__input" type="text" id="patronymic" placeholder="Александрович">
+          </label>
+        </fieldset>
+        <!--Поля с контактами пользователя-->
+        <fieldset class="fieldset fieldset__user-contact">
+          <legend class="fieldset__title">Контактная информация</legend>
+          <label class="fieldset__label" for="review-phone">
+            <span>Контактный телефон:</span>
+            <input class="fieldset__input input__phone" type="text" id="review-phone" placeholder="Введите телефон">
+          </label>
+          <label class="fieldset__label input__male" for="review-male">
+            <span>Электронная почта:</span>
+            <input class="fieldset__input" type="text" id="review-male" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+        <!--Поля с оценкой-->
+        <fieldset class="fieldset fieldset__radio-group">
+          <legend class="fieldset__title">Ваше общее впечатление</legend>
+          <label class="radio__label" for="review-positiv">
+            <span>Скорее положительное</span>
+            <input class="fieldset__radio" type="radio" name="radio" id="review-positiv">
+          </label>
+          <label class="radio__label" for="review-negativ">
+            <span>Скорее отрицательное</span>
+            <input class="fieldset__radio" type="radio" name="radio" id="review-negativ">
+          </label>
+          <label class="radio__label" for="review-neutral">
+            <span>Затрудняюсь ответить</span>
+            <input class="fieldset__radio" type="radio" name="radio" id="review-neutral">
+          </label>
+        </fieldset>
+        <!--Поля с выбором достопримечательностей-->
+        <fieldset class="fieldset fieldset__checkbox-group">
+          <legend class="fieldset__title">Посещенные достопримечательности:</legend>
+          <label class="checkbox__label" for="one_check">
+            <span>Мост Дьявола</span>
+            <input class="fieldset__checkbox" type="checkbox" id="one_check" checked>
+          </label>
+          <label class="checkbox__label" for="two_check">
+            <span>Гора-Колокол</span>
+            <input class="fieldset__checkbox" type="checkbox" id="two_check" checked>
+          </label>
+          <label class="checkbox__label" for="three_check">
+            <span>Слайд-Парк</span>
+            <input class="fieldset__checkbox" type="checkbox" id="three_check" checked>
+          </label>
+          <label class="checkbox__label" for="four_check">
+            <span>Красные скалы</span>
+            <input class="fieldset__checkbox" type="checkbox" id="four_check">
+          </label>
+        </fieldset>
+        <fieldset class="fieldset fieldset__textarea-group">
+          <legend class="fieldset__title">Опишите свои эмоции:</legend>
+            <textarea class="fieldset__textarea" type="textarea" rows = "5" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <!--Отправка отзыва-->
+          <button class="main-form__button">Отправить отзыв</button>
+      </form> 
+    </div>
+  </main>
+  <footer class = "page-footer">
+    <h3 class="visually-hidden">подвал сайта</h3>
+    <p class="page-footer__contacts">#visitSEDONA</p>
+    <!--Ссылки на соц сети-->
+    <div class="page-footer__social social">
+      <h4 class="visually-hidden social__title">ссылки на социальные сети</h3>
+      <ul class="social__list">
+        <li class = "social__item">
+          <a class="social__link social__link--vkontakte" href="">Мы ВКонтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="">Мы в Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="">
+        <img class="copyright__img" src="" alt="">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
