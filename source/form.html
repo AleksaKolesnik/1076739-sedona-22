@@ -33,28 +33,28 @@
   </header>
   <main class="review">
     <!--блок с картинкой и названием сайта-->
-    <div class="page-poster page-poster-small"> 
+    <div class="page-poster page-poster-small">
       <svg class="page-poster__title" src="img/SEDONA.svg">
-      </svg>  
+      </svg>
   </div>
     <h1 class="review__title">Оставьте свой отзыв</h1>
     <p class="review__subtitle">Помогите нашим отелям стать лучше! оставте отзыв о них.  также о посещенных вами достопримечательностях</p>
     <div class="form-review_wrapper">
-      <form action="" class="form-review">
+      <form action="https://echo.htmlacademy.ru" method="get" class="form-review">
         <!--Поля с именем пользователя-->
         <fieldset class="fieldset fieldset__user-name">
           <legend class="fieldset__title">Представьтесь</legend>
           <label class="fieldset__label" for="reviewName">
             <span>Имя</span>
-            <input class="fieldset__input" type="text" id="reviewName" placeholder="Петр">
+            <input class="fieldset__input" type="text" name="name" id="reviewName" placeholder="Петр">
           </label>
           <label class="fieldset__label" for="surName">
             <span>Фамилия</span>
-            <input class="fieldset__input" type="text" id="surName" placeholder="Иванов">
+            <input class="fieldset__input" type="text" name="surName" id="surName" placeholder="Иванов">
           </label>
           <label class="fieldset__label" for="patronymic">
             <span>Отчество</span>
-            <input class="fieldset__input" type="text" id="patronymic" placeholder="Александрович">
+            <input class="fieldset__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
           </label>
         </fieldset>
         <!--Поля с контактами пользователя-->
@@ -62,11 +62,11 @@
           <legend class="fieldset__title">Контактная информация</legend>
           <label class="fieldset__label" for="review-phone">
             <span>Контактный телефон:</span>
-            <input class="fieldset__input input__phone" type="text" id="review-phone" placeholder="Введите телефон">
+            <input class="fieldset__input input__phone" name="phone" type="text" id="review-phone" placeholder="Введите телефон">
           </label>
-          <label class="fieldset__label input__male" for="review-male">
+          <label class="fieldset__label" for="review-male">
             <span>Электронная почта:</span>
-            <input class="fieldset__input" type="text" id="review-male" placeholder="Введите e-mail">
+            <input class="fieldset__input input__male" name="male" type="text" id="review-male" placeholder="Введите e-mail">
           </label>
         </fieldset>
         <!--Поля с оценкой-->
@@ -74,15 +74,15 @@
           <legend class="fieldset__title">Ваше общее впечатление</legend>
           <label class="radio__label" for="review-positiv">
             <span>Скорее положительное</span>
-            <input class="fieldset__radio" type="radio" name="radio" id="review-positiv">
+            <input class="fieldset__radio" type="radio" name="radio" value="positiv" id="review-positiv">
           </label>
           <label class="radio__label" for="review-negativ">
             <span>Скорее отрицательное</span>
-            <input class="fieldset__radio" type="radio" name="radio" id="review-negativ">
+            <input class="fieldset__radio" type="radio" name="radio" value="negativ" id="review-negativ">
           </label>
           <label class="radio__label" for="review-neutral">
             <span>Затрудняюсь ответить</span>
-            <input class="fieldset__radio" type="radio" name="radio" id="review-neutral">
+            <input class="fieldset__radio" type="radio" name="radio" value="neutral" id="review-neutral">
           </label>
         </fieldset>
         <!--Поля с выбором достопримечательностей-->
@@ -90,28 +90,28 @@
           <legend class="fieldset__title">Посещенные достопримечательности:</legend>
           <label class="checkbox__label" for="one_check">
             <span>Мост Дьявола</span>
-            <input class="fieldset__checkbox" type="checkbox" id="one_check" checked>
+            <input class="fieldset__checkbox" type="checkbox" name="bridge" id="one_check" checked>
           </label>
           <label class="checkbox__label" for="two_check">
             <span>Гора-Колокол</span>
-            <input class="fieldset__checkbox" type="checkbox" id="two_check" checked>
+            <input class="fieldset__checkbox" type="checkbox" name="mountain" id="two_check" checked>
           </label>
           <label class="checkbox__label" for="three_check">
             <span>Слайд-Парк</span>
-            <input class="fieldset__checkbox" type="checkbox" id="three_check" checked>
+            <input class="fieldset__checkbox" type="checkbox" name="park" id="three_check" checked>
           </label>
-          <label class="checkbox__label" for="four_check">
+          <label class="checkbox__label" name="rock" for="four_check">
             <span>Красные скалы</span>
             <input class="fieldset__checkbox" type="checkbox" id="four_check">
           </label>
         </fieldset>
         <fieldset class="fieldset fieldset__textarea-group">
           <legend class="fieldset__title">Опишите свои эмоции:</legend>
-            <textarea class="fieldset__textarea" type="textarea" rows = "5" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="fieldset__textarea" type="textarea" rows = "5" name="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <!--Отправка отзыва-->
-          <button class="main-form__button">Отправить отзыв</button>
-      </form> 
+          <button type = "submit" class="main-form__button">Отправить отзыв</button>
+      </form>
     </div>
   </main>
   <footer class = "page-footer">
@@ -141,3 +141,4 @@
   </footer>
 </body>
 </html>
+
