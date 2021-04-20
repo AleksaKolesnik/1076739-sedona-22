@@ -1,0 +1,48 @@
+.main-form {
+  padding: $paddingMobile;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-form__title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 13px;
+  margin-bottom: 25px;
+}
+
+.main-form__info {
+  font-size: $subtitleMobile;
+  text-transform: uppercase;
+  line-height: $MobileLineheight;
+  margin-bottom: 27px;
+}
+
+.main-form__button {
+  height: 57px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bluegrey;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media (min-width: $widthTablet) {
+    width: 458px;
+  }
+}
+
+.main-map {
+  height: 360px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+
+  @media (min-width: $widthTablet) {
+    background-image: url("../img/map-desktop.jpg.png");
+    background-position: center;
+  }
+}

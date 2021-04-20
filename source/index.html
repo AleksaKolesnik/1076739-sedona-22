@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="header-logo header-position">
-        <img src="img/logotype-mobile.svg.png" class = "logo-small" alt="">
+      <a class="header-logo">
+        <img src="img/logotype-mobile.svg.png" class = "logo-position logo-small" alt="">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close main-nav-nojs">
         <button class="main-nav__burger" type = "button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -20,6 +22,7 @@
           <li class="main-nav__item">
             <a href="catalog.html">Фото и Видео</a>
           </li>
+          <li></li>
           <li class="main-nav__item">
             <a href="form.html">Форма отзыва</a>
           </li>
@@ -30,65 +33,81 @@
       </nav>
     </header>
     <main class="page-main">
+      <div class="wrapper"></div>
       <div class="page-main__poster">
-        <svg class="page-main__title" src="img/text-index.svg.svg">
-        </svg>
+        <img class="page-main__title" src="img/text-index.svg.svg" width="282" height="214">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/triangle_poster_desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/triangle_poster_tablet.svg">
+          <img class="triangle__poster" src="img/intro-triangle.svg" alt="" width="100%">
+        </picture>
       </div>
       <section class="advantages">
-        <h1 class="advantages-title">
-          СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
-        </h1>
-        <p class="advantages-subtitle  trigon-after">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="advantages-title__wrapper">
+          <h1 class="advantages-title">
+            СЕДОНА — небольшой городок в АРИЗОНЕ,<br /> зАСЛУЖИвающий большего!
+          </h1>
+          <p class="advantages-subtitle">Рассмотрим 5 причин, по которым<br />
+            Седона круче, чем гранд каньон!</p>
+        </div>
         <ul class="advantages-list advantages-list__wrapper">
           <li class="advantages__item">
-            <div class="header-item">
-              <div class="header-item__top  header-trigon-before">
+            <div class="header-item__wrapper">
+              <div class="header-item header-item__large">
+                <img class="header-item__triangle" src="img/white_triangle.svg" alt="" height="37" width="678">
+              <div class="header-item__top">
                 <h2 class="advantages__title">Настоящий городок</h2>
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__content">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
-              <div class="header-item__img"></div>
+            </div>
+            <div class="header-item__img first-item__img">
+            </div>
             </div>
             <ul class="sub-advantages">
               <li class="sub-advantages__item">
-                <h3 class="sub-advantages__title icon-before-position">Жилье</h3>
+                <h3 class="sub-advantages__title icon-house">Жилье</h3>
                 <p class="sub-advantages__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="sub-advantages__item">
-                <h3 class="sub-advantages__title icon-before-position">СУВЕНИРЫ</h3>
+              <li class="sub-advantages__item order__2">
+                <h3 class="sub-advantages__title icon-play">СУВЕНИРЫ</h3>
                 <p class="sub-advantages__content">Не только китайского, но и местного производства!</p>
               </li>
               <li class="sub-advantages__item">
-                <h3 class="sub-advantages__title icon-before-position">ЕДА</h3>
+                <h3 class="sub-advantages__title icon-eat">ЕДА</h3>
                 <p class="sub-advantages__content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="header-item">
-              <div class="header-item__top">
-                <h2 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h2>
-                <p class="advantages__number">— №2 —</p>
-                <p class="advantages__content">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="header-item__wrapper header-item__wrapper__revers">
+              <div class="header-item">
+                <div class="header-item__top">
+                  <h2 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h2>
+                  <p class="advantages__number">— №2 —</p>
+                  <p class="advantages__content">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
               </div>
-              <div class="header-item__img"></div>
+              <div class="header-item__img two-item__img"></div>
             </div>
           </li>
-          <li class="advantages__item small_item">
-            <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <p class="advantages__number">— №3—</p>
-            <p class="advantages__content">ВСЕ интересные места находятся очень близко</p>
-          </li>
-          <li class="advantages__item small_item">
-            <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
-            <p class="advantages__number">— №4 —</p>
-            <p class="advantages__content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-          </li>
-          <li class="advantages__item small_item">
-            <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
-            <p class="advantages__number">— №5 —</p>
-            <p class="advantages__content">Большинство едет в гранд каньони толпится там</p>
-          </li>
+          <div class="small_item__wrapper">
+            <li class="advantages__item small_item">
+              <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+              <p class="advantages__number">— №3—</p>
+              <p class="advantages__content">ВСЕ интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item small_item">
+              <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
+              <p class="advantages__number">— №4 —</p>
+              <p class="advantages__content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </li>
+            <li class="advantages__item small_item">
+              <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
+              <p class="advantages__number">— №5 —</p>
+              <p class="advantages__content">Большинство едет в гранд каньони толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="main-form main-form__wrapper">
@@ -99,7 +118,7 @@
     </main>
     <section class="map">
       <h3 class="visually-hidden">интерактивная карта</h3>
-      <iframe src="" frameborder="0"></iframe>
+      <div class="main-map"></div>
     </section>
       <footer class = "page-footer">
         <h3 class="visually-hidden">подвал сайта</h3>
@@ -108,22 +127,22 @@
           <h4 class="visually-hidden social__title">ссылки на социальные сети</h3>
           <ul class="social__list">
             <li class = "social__item">
-              <a class="social__link social__link--vkontakte" href="">Мы ВКонтакте</a>
+              <a class="social__link visually-hidden" href="">Мы ВКонтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="">Мы в Фейсбуке</a>
+              <a class="social__link visually-hidden" href="">Мы в Фейсбуке</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="">Мы в Инстаграм</a>
+              <a class="social__link visually-hidden" href="">Мы в Инстаграм</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="">
-            <img class="copyright__img" src="" alt="">
           </a>
         </div>
       </footer>
+      <script src="js/button.js"></script>
   </body>
 </html>

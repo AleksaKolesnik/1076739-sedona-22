@@ -1,0 +1,35 @@
+.page-main__poster {
+  background-image: url("../back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 390px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 90px;
+  background-color: red;
+  position: relative;
+  background-position: center;
+
+  @media screen and (min-width: $widthTablet) {
+    background-image: url("../img/poster_dekstop_1x.jpg.png");
+    height: 518px;
+    padding-top: 85px;
+  }
+}
+
+.page-main__title {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media screen and (min-width: $widthTablet) {
+    width: 461px;
+    height: 349.97px;
+  }
+}
+
+.triangle__poster {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
