@@ -2,144 +2,162 @@
 <html class = "page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML page-footer__academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="header-logo">
-        <img src="img/logotype-mobile.svg.png" class = "logo-position logo-small" alt="">
+      <a class="page-header__link">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" width="186.6" height="96.43">
+          <img src="img/logotype-mobile.svg" class = "page-header__logo logo-small" alt="Седона" width="101.6" height="84">
+        </picture>
       </a>
-      <nav class="main-nav main-nav--close main-nav-nojs">
+      <nav class="main-nav main-nav--close main-nav--nojs">
         <button class="main-nav__burger" type = "button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list main-nav__wrapper">
           <li class="main-nav__item">
-            <a href="#" >Главная</a>
+            <a class="main-nav__link main-nav__link--active" href="#" >Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фото и Видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и Видео</a>
           </li>
           <li></li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Html Academy</a>
+            <a class="main-nav__link" href="">Html academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <div class="wrapper"></div>
       <div class="page-main__poster">
-        <img class="page-main__title" src="img/text-index.svg.svg" width="282" height="214">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/triangle_poster_desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/triangle_poster_tablet.svg">
-          <img class="triangle__poster" src="img/intro-triangle.svg" alt="" width="100%">
-        </picture>
+        <img class="page-main__title" src="img/text-index.svg" width="282" height="214" alt="добро пожаловать в седону">
       </div>
       <section class="advantages">
-        <div class="advantages-title__wrapper">
-          <h1 class="advantages-title">
-            СЕДОНА — небольшой городок в АРИЗОНЕ,<br /> зАСЛУЖИвающий большего!
+        <div class="advantages__wrapper__title">
+          <h1 class="advantages__main__title">
+            Седона — небольшой городок в Аризоне,<br /> заслуживающий большего!
           </h1>
           <p class="advantages-subtitle">Рассмотрим 5 причин, по которым<br />
             Седона круче, чем гранд каньон!</p>
         </div>
-        <ul class="advantages-list advantages-list__wrapper">
+        <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="header-item__wrapper">
-              <div class="header-item header-item__large">
-                <img class="header-item__triangle" src="img/white_triangle.svg" alt="" height="37" width="678">
+            <div class="advantages__item__wrapper">
+              <div class="header-item header-item--large">
               <div class="header-item__top">
                 <h2 class="advantages__title">Настоящий городок</h2>
                 <p class="advantages__number">— №1 —</p>
-                <p class="advantages__content">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                <p class="advantages__content">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
             </div>
-            <div class="header-item__img first-item__img">
-            </div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/city_desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/city_tablet@1x.jpg">
+                <img class="advantages__img" src="img/city_mobile@1x.jpg" alt="Городок седона" width="320" height="260">
+              </picture>
             </div>
             <ul class="sub-advantages">
               <li class="sub-advantages__item">
                 <h3 class="sub-advantages__title icon-house">Жилье</h3>
                 <p class="sub-advantages__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="sub-advantages__item order__2">
-                <h3 class="sub-advantages__title icon-play">СУВЕНИРЫ</h3>
+              <li class="sub-advantages__item order-2">
+                <h3 class="sub-advantages__title icon-play">Сувениры</h3>
                 <p class="sub-advantages__content">Не только китайского, но и местного производства!</p>
               </li>
               <li class="sub-advantages__item">
-                <h3 class="sub-advantages__title icon-eat">ЕДА</h3>
-                <p class="sub-advantages__content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <h3 class="sub-advantages__title icon-eat">Еда</h3>
+                <p class="sub-advantages__content">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="header-item__wrapper header-item__wrapper__revers">
+            <div class="advantages__item__wrapper advantages__item__wrapper__revers">
               <div class="header-item">
                 <div class="header-item__top">
-                  <h2 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h2>
+                  <h2 class="advantages__title">Там есть мост дьявола</h2>
                   <p class="advantages__number">— №2 —</p>
                   <p class="advantages__content">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               </div>
-              <div class="header-item__img two-item__img"></div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/bridge_desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/bridge_tablet@1x.jpg">
+                <img class="advantages__img" src="img/photo-bridge__mobile@1x.jpg" alt="Мост дьявола">
+              </picture>
             </div>
           </li>
-          <div class="small_item__wrapper">
-            <li class="advantages__item small_item">
-              <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+          <li class="advantages__wrapper__item-small">
+            <li class="advantages__item advantages__item--small">
+              <h2 class="advantages__title">Небольшая площадь</h2>
               <p class="advantages__number">— №3—</p>
-              <p class="advantages__content">ВСЕ интересные места находятся очень близко</p>
+              <p class="advantages__content">Все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages__item small_item">
-              <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
+            <li class="advantages__item advantages__item--small">
+              <h2 class="advantages__title">Красивая дорога</h2>
               <p class="advantages__number">— №4 —</p>
-              <p class="advantages__content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+              <p class="advantages__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages__item small_item">
-              <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
+            <li class="advantages__item advantages__item--small">
+              <h2 class="advantages__title">Мало туристов</h2>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__content">Большинство едет в гранд каньони толпится там</p>
             </li>
-          </div>
+          </li>
         </ul>
       </section>
-      <section class="main-form main-form__wrapper">
-        <p class="main-form__title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-        <p class="main-form__info">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-        <button class="main-form__button">Найти гостиницу</button>
+      <section class="page-main__form">
+        <p class="page-main__form__title">Заинтересовались?</p>
+        <p class="page-main__form__info">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+        <a class="page-main__button" href="form.html">Найти гостиницу</a>
       </section>
     </main>
-    <section class="map">
+    <section class="page-main__map">
       <h3 class="visually-hidden">интерактивная карта</h3>
-      <div class="main-map"></div>
+      <img class="page-main__map__img"></img>
     </section>
       <footer class = "page-footer">
-        <h3 class="visually-hidden">подвал сайта</h3>
         <p class="page-footer__contacts">#visitSEDONA</p>
-        <div class="page-footer__social social">
-          <h4 class="visually-hidden social__title">ссылки на социальные сети</h3>
+        <div class="social">
+          <h4 class="social__title visually-hidden">ссылки на социальные сети</h4>
           <ul class="social__list">
             <li class = "social__item">
-              <a class="social__link visually-hidden" href="">Мы ВКонтакте</a>
+              <a class="social__link social__link--twitter" href="">
+                <span class="visually-hidden">
+                  Мы в Твиттере
+                </span>
+                </a>
             </li>
             <li class="social__item">
-              <a class="social__link visually-hidden" href="">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">
+                  Мы в Фейсбуке
+                </span>
+                </a>
             </li>
             <li class="social__item">
-              <a class="social__link visually-hidden" href="">Мы в Инстаграм</a>
+              <a class="social__link social__link--youtube" href="">
+                <span class="visually-hidden">
+                  Мы на Ютуб
+                  </span>
+                </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="">
+          <p class="page-footer__copyright__text">Разработано</p>
+          <a class= "page-footer__academy" href="">
+            <svg  class= "page-footer__academy__svg" width="27" height="35" fill="black">
+              <use href="img/sprite.svg#page-footer__academy"></use>
+            </svg>
+          </a><a class="copyright__link" href="">
           </a>
         </div>
       </footer>

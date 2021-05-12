@@ -1,0 +1,100 @@
+.page-main__poster {
+  background-image: url("../img/intro-triangle.svg"), url("../back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  min-height: 390px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 90px;
+  background-color: red;
+  position: relative;
+  background-position: bottom,center;
+  @media screen and (min-width: $widthTablet) {
+    background-image:url("../img/triangle_poster_tablet.svg") ,url("../img/poster_dekstop_1x.jpg.png");
+    padding-top: 85px;
+  }
+  @media screen and (min-width: $widthDesktop) {
+    background-image:url("../img/triangle_poster_desktop.svg") ,url("../img/poster_dekstop_1x.jpg.png");
+    padding-top: 85px;
+  }
+}
+
+.page-main__poster--small {
+  min-height: 160px;
+  padding-top: 50px;
+  background-position: bottom;
+}
+
+.page-main__title {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media screen and (min-width: $widthTablet) {
+    width: 461px;
+    height: 349.97px;
+  }
+}
+
+.page-main__button {
+  display: block;
+  min-height: 57px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bluegrey;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 57px;
+
+  @media (min-width: $widthTablet) {
+    width: 458px;
+  }
+}
+
+.page-main__button:hover {
+  background-color: #669ec0;
+}
+
+.page-main__button:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-main__button:disabled {
+  background-color: #e5e5e5;
+}
+.page-main__form {
+  padding: $paddingMobile;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-main__form__title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 13px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.page-main__form__info {
+  font-size: $subtitleMobile;
+  text-transform: uppercase;
+  line-height: $MobileLineheight;
+  margin-bottom: 27px;
+}
+
+.page-main__map {
+  height: 360px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $widthTablet) {
+    background-image: url("../img/map-desktop.jpg.png");
+    background-position: center;
+  }
+}

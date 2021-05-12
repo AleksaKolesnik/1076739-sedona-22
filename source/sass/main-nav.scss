@@ -1,0 +1,120 @@
+.main-nav__list {
+    width: 100%;
+    text-align: center;
+  
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 153px 153px 1fr 153px 153px;
+    }
+  }
+  
+  .main-nav__burger {
+    position: absolute;
+  }
+  
+  .main-nav__link {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 55px;
+    color: black;
+  }
+  
+  .main-nav__link:hover {
+    color: #81b3b2;
+  }
+  
+  .main-nav__link:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .main-nav__link--active {
+    color: #766357;
+  }
+  
+  .main-nav__link--active:hover {
+    color: #604e43;
+  }
+  
+  .main-nav__link--active:focus {
+    color: #d6d0cd;
+  }
+  
+  @media (max-width: $widthMobileOnly) {
+    .main-nav__link {
+      background-color: $bluegrey;
+      height: 55px;
+      color: #ffffff;
+    }
+  
+    .main-nav__link:hover {
+      background-color: $bluButtonHover;
+      color: #ffffff;
+    }
+  
+    .main-nav__link:focus {
+      background-color: $bluButtonDown;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  
+    .main-nav__item:not(:last-child) {
+      border-bottom: 1px solid #678fab;
+    }
+  
+    .main-nav__item:not(:first-child) {
+      border-top: 1px solid #9ac2db;
+    }
+  
+    .main-nav__item:last-child {
+      background: linear-gradient(#81b3d2 48px, #6c96b0);
+    }
+  
+    .main-nav--close .main-nav__burger {
+      position: absolute;
+      right: 20px;
+      bottom: 17px;
+      width: 23px;
+      height: 22px;
+      background: linear-gradient(#81b3d2 4px, white 4px, white 9px, #81b3d2 9px, #81b3d2 13px, white 13px, white 18px, #81b3d2 18px);
+    }
+  
+    .main-nav--close .main-nav__burger:hover {
+      opacity: 0.6;
+    }
+  
+    .main-nav--close .main-nav__burger:focus {
+      opacity: 0.3;
+    }
+  
+    .main-nav--active .main-nav__burger {
+      position: absolute;
+      background-color: transparent;
+      right: 20px;
+      width: 23px;
+      height: 22px;
+      background-image: url("../img/icon-cross.svg");
+      top: 17px;
+      z-index: 20;
+    }
+  
+    .main-nav--active .main-nav__burger:hover {
+      opacity: 0.6;
+    }
+  
+    .main-nav--active .main-nav__burger:focus {
+      opacity: 0.3;
+    }
+  }
+  
+  @media screen and (max-width: $widthMobileOnly) {
+    .main-nav--close .main-nav__list {
+      display: none;
+    }
+  
+    .main-nav--nojs .main-nav__list {
+      display: block;
+    }
+  
+    .main-nav--nojs .main-nav__burger {
+      display: none;
+    }
+  }

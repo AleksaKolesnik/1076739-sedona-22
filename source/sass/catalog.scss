@@ -1,0 +1,13 @@
+.catalog-info {
+  padding-top: 36px;
+  padding-left: $paddingMobile;
+  padding-right: $paddingMobile;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $widthTablet) {
+    padding-top: 64px;
+  }
+}
+
+

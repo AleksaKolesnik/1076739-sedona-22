@@ -1,0 +1,47 @@
+.page-footer {
+  padding: 20px;
+  padding-top: 40px;
+
+  @media (min-width: $widthTablet) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: $paddingTabletForm;
+    padding-right: $paddingTabletForm;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-left: $paddingDesktopForm;
+    padding-right: $paddingDesktopForm;
+  }
+}
+
+.page-footer__contacts {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.page-footer__copyright__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer__academy:hover svg {
+  fill: #81b3d2;
+}
+
+.page-footer__academy:focus svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
