@@ -1,75 +1,3 @@
-
-
-.form__review {
-  padding-bottom: 61px;
-}
-
-@media (min-width: $widthTablet) {
-  .form__grid__container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  .fieldset--user-contact {
-    grid-column: span 2;
-  }
-
-  .fieldset--textarea-group {
-    grid-column: span 2;
-  }
-
-  .fieldset--radio-group {
-    order: -1;
-  }
-
-  .fieldset--checkbox-group {
-    grid-column: span 2;
-  }
-
-  .form__conteiner-checkbox {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    max-width: 460px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .form__button-wrapper {
-    display: flex;
-    padding-left: $paddingTabletForm;
-    padding-right: $paddingTabletForm;
-  }
-
-  .form__button {
-    margin-left: 0;
-  }
-
-  .button__span {
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-}
-
-@media (min-width: $widthDesktop) {
-  .form__conteiner-checkbox {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    max-width: 960px;
-  }
-
-  .form__button-wrapper {
-    display: flex;
-    padding-left: $paddingDesktopForm;
-    padding-right: $paddingDesktopForm;
-  }
-}
-
 .fieldset {
   border: none;
   border-top: 1px solid #e5e5e5;
@@ -77,6 +5,7 @@
 
   @media (min-width: $widthTablet) {
     padding: 25px $paddingTabletForm;
+    border-top: none;
   }
 
   @media (min-width: $widthDesktop) {
@@ -87,7 +16,6 @@
 
 .fieldset__label {
   display: block;
-  margin-top: 20px;
 }
 
 .fieldset__input {
@@ -95,6 +23,14 @@
   width: 100%;
   height: 58px;
   background-color: $inputBackground;
+  padding: 18px 0 14px 22px;
+  margin-top: 16px;
+}
+
+.fieldset__input::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
 }
 
 .fieldset__input__name {
@@ -125,13 +61,31 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .fieldset__label--male,
 .fieldset__label--phone {
   position: relative;
   display: block;
+}
+
+.fieldset__title--contact {
+  text-align: left;
+
+  @media (min-width: $widthTablet) {
+    text-align: center;
+  }
+}
+
+.fieldset__title--name {
+  @media (min-width: $widthTablet) {
+    text-align: left;
+  }
+}
+
+.fieldset__title--impression {
+  text-align: left;
 }
 
 .fieldset__label--male::after,
@@ -162,10 +116,16 @@
 .fieldset__radio-label__name {
   display: inline-flex;
   position: relative;
-  height: 72px;
-  line-height: 72px;
+  height: 82px;
+  line-height: 82px;
   font-weight: bold;
   padding-left: 51px;
+  font-size: 18px;
+}
+
+.fieldset__label__name {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .fieldset__radio-label > span::before {
@@ -252,4 +212,69 @@
 
 .fieldset__radio-label:focus .fieldset__radio:checked ~ .fieldset__radio-label__name::before {
   background-color: #a4a4a4;
+}
+
+@media (min-width: $widthTablet) {
+  .fieldset--user-contact {
+    grid-column: span 2;
+  }
+
+  .fieldset--textarea-group {
+    grid-column: span 2;
+  }
+
+  .fieldset--radio-group {
+    order: -1;
+    position: relative;
+  }
+
+  .fieldset--checkbox-group {
+    grid-column: span 2;
+  }
+
+  .fieldset__title--border {
+    position: relative;
+  }
+
+  .fieldset__title--border::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 123px;
+    left: 0;
+    background-color: #dbdbdb;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .fieldset__title--border::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 123px;
+    right: 0;
+    background-color: #dbdbdb;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .fieldset--radio-group::after {
+    content: "";
+    position: absolute;
+    height: 292px;
+    width: 1px;
+    background-color: #dbdbdb;
+    right: 0;
+    top: 25px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .fieldset__title--border::before {
+    width: 280px;
+  }
+
+  .fieldset__title--border::after {
+    width: 280px;
+  }
 }

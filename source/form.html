@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>page-footer__academy Sedona review</title>
+  <title>Оставьте отзыв</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" type="image/svg" href="img/favicon.svg">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -38,18 +46,18 @@
   </header>
   <main class="page-main">
     <div class="page-main__poster page-main__poster--small">
-      <img class="page-main__title" src="img/sedona.svg" width="282" height="214" alt="добро пожаловать в седону">
+      <img class="page-main__title" src="img/sedona.svg" width="229" height="39" alt="добро пожаловать в седону">
     </div>
     <div class="review">
-      <h1 class="review__title advantages__main__title">Оставьте свой отзыв</h1>
-      <p class="review__subtitle advantages-subtitle">Помогите нашим отелям стать лучше! оставте отзыв о них, a также о посещенных вами достопримечательностях</p>
+      <h1 class="review__title page-main-title">Оставьте свой отзыв</h1>
+      <p class="review__subtitle page-main-subtitle">Помогите нашим отелям стать лучше! оставте отзыв о них, a также о посещенных вами достопримечательностях</p>
     </div>
     <div class="form">
       <form action="https://echo.htmlpage-footer__academy.ru" method="get" class="form__review">
         <!--Поля с именем пользователя-->
           <div class="form__grid__container">
             <fieldset class="fieldset">
-              <h2 class="fieldset__title">Представьтесь</h2>
+              <h2 class="fieldset__title fieldset__title--name">Представьтесь</h2>
           <label class="fieldset__label" for="reviewName">
             <div class="fieldset__label__wrapper">
               <span class="fieldset__label__name">Имя</span>
@@ -72,7 +80,7 @@
         </fieldset>
         <!--Поля с контактами пользователя-->
         <fieldset class="fieldset fieldset--user-contact">
-          <h2 class="fieldset__title">Контактная информация</h2>
+          <h2 class="fieldset__title fieldset__title--contact fieldset__title--border">Контактная информация</h2>
           <label class="fieldset__label fieldset__label--phone" for="review-phone">
             <span class="fieldset__label__name">Контактный телефон:</span>
             <input class="fieldset__input" name="phone" type="tel" id="review-phone" placeholder="Введите телефон"  required>
@@ -84,7 +92,7 @@
         </fieldset>
         <!--Поля с оценкой-->
         <fieldset class="fieldset fieldset--radio-group">
-          <h2 class="fieldset__title">Ваше общее впечатление</h2>
+          <h2 class="fieldset__title fieldset__title--impression">Ваше общее впечатление</h2>
           <label class="fieldset__radio-label" for="review-positiv" tabindex="0">
             <input class="fieldset__radio" type="radio" name="radio" value="positiv" id="review-positiv">
             <span class="fieldset__radio-label__name">Скорее положительное</span>
@@ -100,7 +108,7 @@
         </fieldset>
         <!--Поля с выбором достопримечательностей-->
         <fieldset class="fieldset fieldset--checkbox-group">
-          <h2 class="fieldset__title">Посещенные достопримечательности:</h2>
+          <h2 class="fieldset__title fieldset__title--prim fieldset__title--border">Посещенные <br />достопримечательности:</h2>
           <div class="form__conteiner-checkbox">
             <label class="fieldset__checkbox-label" for="one_check">
               <input class="fieldset__checkbox" type="checkbox" name="bridge" id="one_check" checked>
@@ -121,14 +129,14 @@
           </div>
         </fieldset>
         <fieldset class="fieldset fieldset--textarea-group">
-          <h2 class="fieldset__title">Опишите свои эмоции:</h2>
+          <h2 class="fieldset__title fieldset__title--border">Опишите свои эмоции:</h2>
           <textarea class="fieldset__textarea" rows = "5" name="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
           </div>
         <!--Отправка отзыва-->
         <div class="form__button-wrapper">
           <button type = "submit" class="form__button page-main__button">Отправить отзыв</button>
-        <span class="visually-hidden form__button-span">*-обязательные поля</span>
+        <span class="form__button-span">*-обязательные поля</span>
         </div>
       </form>
     </div>

@@ -5,6 +5,14 @@
 
 .advantages__wrapper__title {
   padding: 32px 25px 0 25px;
+
+  @media (min-width: $widthTablet) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-top: 55px;
+  }
 }
 
 .advantages__list {
@@ -70,10 +78,11 @@
   background-image: url("../img/white_triangle.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  
+
   @media screen and (min-width: 500px) {
     background-image: none;
   }
+
   @media screen and (min-width: $widthTablet) {
     padding-top: 39px;
   }

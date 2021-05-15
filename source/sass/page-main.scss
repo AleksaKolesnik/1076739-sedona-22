@@ -1,5 +1,5 @@
 .page-main__poster {
-  background-image: url("../img/intro-triangle.svg"), url("../back-mobile.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/back_mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
   min-height: 390px;
@@ -8,21 +8,61 @@
   padding-top: 90px;
   background-color: red;
   position: relative;
-  background-position: bottom,center;
-  @media screen and (min-width: $widthTablet) {
-    background-image:url("../img/triangle_poster_tablet.svg") ,url("../img/poster_dekstop_1x.jpg.png");
-    padding-top: 85px;
+  background-position: bottom, center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/back_mobile@2x.jpg");
   }
+
+  @media screen and (min-width: $widthTablet) {
+    background-image: url("../img/triangle_poster_tablet.svg"), url("../img/back_tablet@1x.jpg");
+    padding-top: 77px;
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle_poster_tablet.svg"), url("../img/back_tablet@2x.jpg");
+    }
+  }
+
   @media screen and (min-width: $widthDesktop) {
-    background-image:url("../img/triangle_poster_desktop.svg") ,url("../img/poster_dekstop_1x.jpg.png");
-    padding-top: 85px;
+    background-image: url("../img/triangle_poster_desktop.svg"), url("../img/back_desktop@1x.jpg");
+    padding-top: 77px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle_poster_desktop.svg"), url("../img/back_desktop@2x.jpg");
+    }
   }
 }
 
 .page-main__poster--small {
-  min-height: 160px;
+  min-height: 158px;
   padding-top: 50px;
+  background-image: url("../img/intro-triangle.svg"), url("../img/back_small_mobile@1x.jpg");
   background-position: bottom;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/back_small_mobile@2x.jpg");
+  }
+
+
+  @media (min-width: $widthTablet) {
+    background-image: url("../img/triangle_poster_tablet.svg"), url("../img/back_small_tablet@1x.jpg");
+    min-height: 290px;
+    padding-top: 95px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle_poster_tablet.svg"), url("../img/back_small_tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $widthDesktop) {
+    background-image: url("../img/triangle_poster_desktop.svg"), url("../img/back_small_desktop@1x.jpg");
+    padding-top: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle_poster_desktop.svg"), url("../img/back_small_desktop@2x.jpg");
+    }
+  }
 }
 
 .page-main__title {
@@ -33,6 +73,18 @@
   @media screen and (min-width: $widthTablet) {
     width: 461px;
     height: 349.97px;
+  }
+
+  @media screen and (min-width: $widthDesktop) {
+    width: 459.5px;
+    height: 349.97px;
+  }
+}
+
+.page-main__poster--small .page-main__title {
+  @media (min-width: $widthTablet) {
+    width: 456.9px;
+    height: 77.6px;
   }
 }
 
@@ -66,6 +118,7 @@
 .page-main__button:disabled {
   background-color: #e5e5e5;
 }
+
 .page-main__form {
   padding: $paddingMobile;
   text-align: center;
@@ -87,14 +140,36 @@
   margin-bottom: 27px;
 }
 
-.page-main__map {
-  height: 360px;
-  background-image: url("../img/map-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.page-main__map__img {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @media (min-width: $widthTablet) {
-    background-image: url("../img/map-desktop.jpg.png");
-    background-position: center;
+/*Стили для всех заголовков страниц*/
+
+.page-main-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $titleMobile;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media screen and (min-width: $widthTablet) {
+    font-size: $titleTablet;
+  }
+}
+
+.page-main-subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $subtitleMobile;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $widthTablet) {
+    font-size: $subtitleMobile;
   }
 }

@@ -1,0 +1,60 @@
+
+
+.form__review {
+  padding-bottom: 61px;
+}
+
+.form__button-span {
+  display: none;
+}
+
+@media (min-width: $widthTablet) {
+  .form__grid__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .form__conteiner-checkbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    padding-left: $paddingTabletForm;
+    padding-right: $paddingTabletForm;
+  }
+
+  .form__button {
+    margin-left: 0;
+  }
+
+  .form__button-span {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__conteiner-checkbox {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 960px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    padding-left: $paddingDesktopForm;
+    padding-right: $paddingDesktopForm;
+  }
+}
