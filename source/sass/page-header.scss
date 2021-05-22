@@ -6,19 +6,42 @@
 }
 
 .page-header__link {
-  text-align: center;
-}
-
-.page-header__logo {
+  left: 50%;
   z-index: 5;
   position: absolute;
   transform: translateX(-50%);
 }
 
 @media (max-width: $widthMobileOnly) {
-  .page-header__link {
+  .page-header__wrapper {
     position: relative;
     order: 2;
     height: 55px;
+  }
+}
+
+.page-header__logo {
+  width: 187px;
+  height: 97px;
+
+  @media (min-width: $widthDesktop) {
+    width: 187px;
+    height: 97px;
+  }
+}
+
+.page-header__blue {
+  display: none;
+
+  @media (min-width: $widthDesktop) {
+    display: block;
+  }
+}
+
+.page-header__cloud {
+  display: none;
+
+  @media (min-width: $widthTablet) {
+    display: block;
   }
 }

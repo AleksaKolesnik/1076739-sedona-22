@@ -1,15 +1,35 @@
 .catalog-info {
-  padding-top: 31px;
+  padding-top: 28px;
   padding-left: $paddingMobile;
   padding-right: $paddingMobile;
   padding-bottom: 10px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $widthTablet) {
-    padding-top: 65px;
+    padding-top: 60px;
   }
 
   @media (min-width: $widthDesktop) {
-    padding-top: 104px;
+    padding-top: 100px;
+  }
+}
+
+.catalog-info__title {
+  @media (min-width: $widthTablet) {
+    font-size: 30px;
+  }
+}
+
+.catalog-info__subtitle {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  max-width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+
+  @media (min-width: $widthTablet) {
+    margin-top: 27px;
+    margin-bottom: 70px;
   }
 }

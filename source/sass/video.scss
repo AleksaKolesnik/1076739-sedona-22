@@ -1,25 +1,57 @@
 .video {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 105px;
 
   @media (min-width: $widthTablet) {
     margin-left: auto;
     margin-right: auto;
     width: 648px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $widthDesktop) {
     width: 800px;
+    margin-bottom: 65px;
   }
 }
 
 .video__title {
-  padding: 32px 26px;
+  padding-top: 32px;
+  padding-bottom: 25px;
+
+  @media (min-width: $widthTablet) {
+    font-size: 30px;
+    padding-top: 57px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-top: 60px;
+    padding-bottom: 35px;
+  }
+}
+
+.video__subtitle {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  @media (min-width: $widthTablet) {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $widthDesktop) {
+    margin-bottom: 75px;
+  }
 }
 
 .video__item {
   display: block;
+  min-height: 200px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +65,7 @@
 
   @media (min-width: $widthTablet) {
     width: 648px;
+    height: 500px;
     background-image: url("../img/video-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -52,8 +85,8 @@
 
 .video__controls-panel {
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: absolute;
   bottom: -66px;
 
@@ -76,7 +109,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
-    width: 100%;
+    width: 600px;
     padding-left: 90px;
     padding-right: 120px;
   }
@@ -91,24 +124,29 @@
 }
 
 .video__runner {
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  left: 30%;
+  left: 15%;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: $widthTablet) {
+    left: 30%;
+  }
 }
 
 .video__button__inner {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 20px 25px 20px 25px;
+  padding: 20px 15px 20px 15px;
   display: flex;
 
   @media (min-width: $widthTablet) {
     background-color: rgba(0, 0, 0, 0.6);
+    padding: 35px;
   }
 }
 
@@ -142,4 +180,8 @@
 
 .video__cc {
   margin-left: auto;
+}
+
+.video__scale {
+  margin-left: 20px;
 }

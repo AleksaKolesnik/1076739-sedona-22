@@ -3,10 +3,20 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main-nav__item {
+    width: 20%;
+  }
+
+  .main-nav__item:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
 
 .main-nav__burger {
   position: absolute;
@@ -15,8 +25,9 @@
 .main-nav__link {
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 58px;
   color: black;
+  font-size: 14px;
 }
 
 .main-nav__link:hover {
@@ -42,8 +53,9 @@
 @media (max-width: $widthMobileOnly) {
   .main-nav__link {
     background-color: $bluegrey;
-    height: 55px;
+    height: 54px;
     color: #ffffff;
+    font-size: 18px;
   }
 
   .main-nav__link:hover {

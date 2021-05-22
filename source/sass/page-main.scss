@@ -6,7 +6,7 @@
   padding-left: 17px;
   padding-right: 17px;
   padding-top: 90px;
-  background-color: red;
+  background-color: $bluegrey;
   position: relative;
   background-position: bottom, center;
 
@@ -58,6 +58,7 @@
   @media (min-width: $widthDesktop) {
     background-image: url("../img/triangle_poster_desktop.svg"), url("../img/back_small_desktop@1x.jpg");
     padding-top: 100px;
+    min-height: 300px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/triangle_poster_desktop.svg"), url("../img/back_small_desktop@2x.jpg");
@@ -123,14 +124,37 @@
   padding: $paddingMobile;
   text-align: center;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 767px) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $widthTablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-top: 15px;
+    margin-bottom: 45px;
+  }
 }
 
 .page-main__form__title {
   font-size: 21px;
   font-weight: bold;
   margin-top: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $widthTablet) {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .page-main__form__info {
@@ -138,6 +162,20 @@
   text-transform: uppercase;
   line-height: $MobileLineheight;
   margin-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $widthTablet) {
+    margin-bottom: 36px;
+
+    & span {
+      display: block;
+    }
+  }
+
+  @media (min-width: $widthDesktop) {
+    margin-bottom: 42px;
+  }
 }
 
 .page-main__map__img {
@@ -173,3 +211,9 @@
     font-size: $subtitleMobile;
   }
 }
+
+.page-main__iframe {
+  width: 100%;
+  border: none;
+}
+

@@ -1,12 +1,27 @@
 .sub-advantages {
   padding: $paddingMobile;
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 36px;
 
   @media screen and (min-width: $widthTablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 185px 155px 193px;
+    gap: 85px;
     padding-bottom: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-left: 58px;
+    padding-bottom: 82px;
+    gap: 110px;
+    grid-template-columns: 282px 300px 275px;
   }
 }
 
@@ -17,8 +32,8 @@
 }
 
 .sub-advantages__title {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 23px;
+  margin-bottom: 20px;
   position: relative;
   padding-left: 50px;
 
@@ -27,6 +42,8 @@
     padding-top: 100px;
     padding-left: 0;
     margin-top: 40px;
+    font-size: 21px;
+    margin-bottom: 25px;
   }
 
   &::before {
@@ -83,9 +100,16 @@
 .sub-advantages__content {
   padding-left: 50px;
   font-size: 14px;
+  line-height: 21px;
 
   @media screen and (min-width: $widthTablet) {
     text-align: center;
     padding-left: 0;
+  }
+
+  @media (min-width: $widthDesktop) {
+    & span {
+      display: block;
+    }
   }
 }

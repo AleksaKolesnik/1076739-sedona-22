@@ -1,7 +1,8 @@
 .fieldset {
   border: none;
   border-top: 1px solid #e5e5e5;
-  padding: 25px $paddingMobile;
+  padding: 20px $paddingMobile;
+  margin: 0;
 
   @media (min-width: $widthTablet) {
     padding: 25px $paddingTabletForm;
@@ -15,7 +16,9 @@
 }
 
 .fieldset__label {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .fieldset__input {
@@ -24,7 +27,24 @@
   height: 58px;
   background-color: $inputBackground;
   padding: 18px 0 14px 22px;
-  margin-top: 16px;
+}
+
+.fieldset__input--contact {
+  margin-top: 13px;
+
+  @media (min-width: $widthDesktop) {
+    margin-top: 0;
+    width: 315px;
+  }
+}
+
+.fieldset__label__name--contact {
+  padding-left: 20px;
+
+  @media (min-width: $widthDesktop) {
+    padding-right: 18px;
+    padding-left: 0;
+  }
 }
 
 .fieldset__input::placeholder {
@@ -34,16 +54,7 @@
 }
 
 .fieldset__input__name {
-  margin-left: 20px;
-}
-
-.fieldset__label__wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.fieldset__label__wrapper span {
-  display: block;
+  margin-left: 15px;
 }
 
 .fieldset__radio-label {
@@ -61,31 +72,34 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 28px;
+
+  @media (min-width: $widthTablet) {
+    font-size: 21px;
+    margin-bottom: 45px;
+  }
 }
 
 .fieldset__label--male,
 .fieldset__label--phone {
   position: relative;
   display: block;
+
+  @media (min-width: $widthDesktop) {
+    display: flex;
+  }
 }
 
-.fieldset__title--contact {
-  text-align: left;
-
-  @media (min-width: $widthTablet) {
-    text-align: center;
+.fieldset__label--phone {
+  @media (min-width: $widthDesktop) {
+    margin-right: 80px;
   }
 }
 
 .fieldset__title--name {
   @media (min-width: $widthTablet) {
     text-align: left;
+    margin-bottom: 55px;
   }
-}
-
-.fieldset__title--impression {
-  text-align: left;
 }
 
 .fieldset__label--male::after,
@@ -99,6 +113,11 @@
   right: 0;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $widthDesktop) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .fieldset__label--phone::after {
@@ -116,16 +135,24 @@
 .fieldset__radio-label__name {
   display: inline-flex;
   position: relative;
-  height: 82px;
-  line-height: 82px;
+  height: 70px;
+  line-height: 70px;
   font-weight: bold;
-  padding-left: 51px;
+  padding-left: 80px;
   font-size: 18px;
+
+  @media (min-width: $widthTablet) {
+    height: 78px;
+    line-height: 78px;
+    padding-left: 75px;
+  }
 }
 
 .fieldset__label__name {
   font-size: 14px;
   text-transform: uppercase;
+  display: block;
+  color: #333333;
 }
 
 .fieldset__radio-label > span::before {
@@ -134,7 +161,7 @@
   width: 18px;
   height: 18px;
   background-color: #f2f2f2;
-  border: 13px solid $inputBackground;
+  border: 18px solid $inputBackground;
   border-radius: 50%;
   left: 0;
   top: 50%;
@@ -147,10 +174,11 @@
 
 .fieldset__checkbox-label__name {
   position: relative;
-  height: 72px;
+  height: 78px;
   padding-left: 80px;
   font-weight: bold;
-  line-height: 72px;
+  line-height: 78px;
+  font-size: 18px;
 }
 
 .fieldset__checkbox-label__name::before {
@@ -167,16 +195,20 @@
   background-repeat: no-repeat;
 }
 
-.fieldset__checkbox:checked + .fieldset__checkbox-label__name::before {
-  background-image: url("../img/tick.svg.svg");
+.fieldset__checkbox-label__name:hover::before {
+  background-color: $inputBackHover;
 }
 
-.fieldset__textarea {
-  border: none;
-  resize: none;
-  background-color: $inputBackground;
-  width: 100%;
-  min-height: 160px;
+.fieldset__checkbox-label:focus .fieldset__checkbox-label__name::before {
+  background-color: $inputBackFocus;
+}
+
+.fieldset__checkbox-label:focus .fieldset__checkbox:checked + .fieldset__checkbox-label__name::before {
+  background-image: url("../img/tick_down.png");
+}
+
+.fieldset__checkbox:checked + .fieldset__checkbox-label__name::before {
+  background-image: url("../img/tick_check.png");
 }
 
 .fieldset__input:hover {
@@ -214,29 +246,131 @@
   background-color: #a4a4a4;
 }
 
+.fieldset--radio-group {
+  padding-top: 25px;
+  padding-bottom: 15px;
+
+  @media (min-width: $widthTablet) {
+    order: -1;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 55px;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-left: 0;
+  }
+}
+
+.fieldset__title--prim {
+  margin-bottom: 10px;
+}
+
+.fieldset__title--impression {
+  margin-bottom: 15px;
+
+  @media (min-width: $widthTablet) {
+    margin-bottom: 48px;
+  }
+}
+
+.fieldset:nth-of-type(1) {
+  @media (min-width: $widthDesktop) {
+    padding-left: 80px;
+  }
+}
+
+.fieldset--checkbox-group {
+  padding-bottom: 15px;
+  grid-column: span 2;
+
+  @media (min-width: $widthTablet) {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $widthDesktop) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+}
+
+.fieldset__textarea {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: none;
+  resize: none;
+  background-color: $inputBackground;
+  width: 100%;
+  min-height: 160px;
+  outline: none;
+
+  &::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  &:hover {
+    background-color: $inputBackHover;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid $inputBackHover;
+  }
+}
+
 @media (min-width: $widthTablet) {
   .fieldset--user-contact {
     grid-column: span 2;
+    padding-top: 44px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .fieldset--user-contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.fieldset__title--contact {
+  @media (min-width: $titleTablet) {
+    margin-bottom: 23px;
   }
 
-  .fieldset--textarea-group {
-    grid-column: span 2;
+  @media (min-width: $widthDesktop) {
+    margin-bottom: 47px;
   }
+}
 
-  .fieldset--radio-group {
-    order: -1;
-    position: relative;
+.fieldset__label--male {
+
+  margin-top: 15px;
+
+  @media (min-width: $widthTablet) {
+    margin-top: 28px;
   }
+}
 
-  .fieldset--checkbox-group {
-    grid-column: span 2;
+.fieldset--textarea-group {
+  grid-column: span 2;
+
+  @media (min-width: $widthDesktop) {
+    padding-left: 0;
+    padding-right: 0;
   }
+}
 
-  .fieldset__title--border {
-    position: relative;
-  }
+.fieldset__title--border {
+  position: relative;
+}
 
-  .fieldset__title--border::before {
+.fieldset__title--border::before {
+  @media (min-width: $widthTablet) {
     content: "";
     position: absolute;
     height: 1px;
@@ -246,8 +380,10 @@
     top: 50%;
     transform: translateY(-50%);
   }
+}
 
-  .fieldset__title--border::after {
+.fieldset__title--border::after {
+  @media (min-width: $widthTablet) {
     content: "";
     position: absolute;
     height: 1px;
@@ -257,17 +393,19 @@
     top: 50%;
     transform: translateY(-50%);
   }
-
-  .fieldset--radio-group::after {
-    content: "";
-    position: absolute;
-    height: 292px;
-    width: 1px;
-    background-color: #dbdbdb;
-    right: 0;
-    top: 25px;
-  }
 }
+
+
+.fieldset--radio-group::after {
+  content: "";
+  position: absolute;
+  height: 292px;
+  width: 1px;
+  background-color: #dbdbdb;
+  right: 0;
+  top: 25px;
+}
+
 
 @media (min-width: $widthDesktop) {
   .fieldset__title--border::before {
@@ -276,5 +414,23 @@
 
   .fieldset__title--border::after {
     width: 280px;
+  }
+}
+
+.fieldset__label__conteiner {
+  @media (min-width: $widthDesktop) {
+    display: flex;
+  }
+}
+
+.fieldset__label__hidden {
+  @media (min-width: $widthDesktop) {
+    display: none;
+  }
+}
+
+.fieldset--name {
+  @media (min-width: $widthDesktop) {
+    padding-right: 0;
   }
 }
