@@ -143,7 +143,7 @@
   }
 }
 
-.page-main__form__title {
+.page-main__form-title {
   font-size: 21px;
   font-weight: bold;
   margin-top: 13px;
@@ -157,7 +157,7 @@
   }
 }
 
-.page-main__form__info {
+.page-main__form-info {
   font-size: $subtitleMobile;
   text-transform: uppercase;
   line-height: $MobileLineheight;
@@ -176,13 +176,6 @@
   @media (min-width: $widthDesktop) {
     margin-bottom: 42px;
   }
-}
-
-.page-main__map__img {
-  display: block;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*Стили для всех заголовков страниц*/

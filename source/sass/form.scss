@@ -9,7 +9,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .form__grid__container {
+  .form__grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -53,7 +53,7 @@
   }
 }
 
-.form__grid__container {
+.form__grid-container {
   @media (min-width: $widthDesktop) {
     padding-left: 120px;
     padding-right: 120px;
@@ -86,7 +86,7 @@
   position: relative;
 }
 
-.form__wrapper-succes {
+.form__succes {
   display: none;
   left: 50%;
   transform: translateX(-50%);
@@ -102,7 +102,7 @@
   }
 }
 
-.form__wrapper-succes--active {
+.form__succes--active {
   display: block;
 }
 
@@ -125,7 +125,7 @@
   }
 }
 
-.form__succes-popup__title {
+.form__succes-title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -138,7 +138,7 @@
   }
 }
 
-.form__succes-popup__content {
+.form__succes-content {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -153,7 +153,7 @@
   }
 }
 
-.form__succes-popup__button {
+.form__succes-button {
   display: block;
   min-height: 57px;
   width: 280px;
@@ -172,7 +172,7 @@
   }
 }
 
-.form__succes-popup__wrapper {
+.form__succes-wrapper {
   padding: 20px;
   background-color: #f2f2f2;
   margin-top: auto;
@@ -182,7 +182,7 @@
   }
 }
 
-.form__wrapper-faulure {
+.form__faulure {
   display: none;
   position: absolute;
   bottom: 478px;
@@ -198,7 +198,7 @@
   }
 }
 
-.form__wrapper-faulure--active {
+.form__faulure--active {
   display: block;
 }
 
@@ -219,7 +219,7 @@
   }
 }
 
-.form__faulure-popup__title {
+.form__faulure-title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -230,13 +230,13 @@
 
   @media (min-width: $widthTablet) {
     font-size: 30px;
-    line-height: 26px;
+    line-height: 32px;
     width: 220px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }
 
-.form__faulure-popup__content {
+.form__faulure-content {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -250,7 +250,7 @@
   }
 }
 
-.form__faulure-popup__button {
+.form__faulure-button {
   display: block;
   min-height: 57px;
   width: 180px;

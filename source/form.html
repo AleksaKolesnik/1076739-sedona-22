@@ -90,20 +90,20 @@
     <div class="form">
       <form action="https://echo.htmlpage-footer__academy.ru" method="get" class="form__review">
         <!--Поля с именем пользователя-->
-          <div class="form__grid__container">
+          <div class="form__grid-container">
             <fieldset class="fieldset fieldset--name">
               <h2 class="fieldset__title fieldset__title--name">Представьтесь</h2>
           <label class="fieldset__label" for="reviewName">
-              <span class="fieldset__label__name">Имя*:</span>
-              <input class="fieldset__input fieldset__input__name" type="text" name="name" id="reviewName" placeholder="Петр"  required>
+              <span class="fieldset__label-name">Имя*:</span>
+              <input class="fieldset__input fieldset__input--name" type="text" name="name" id="reviewName" placeholder="Петр"  required>
           </label>
           <label class="fieldset__label" for="surName">
-              <span class="fieldset__label__name">Фамилия*:</span>
-              <input class="fieldset__input fieldset__input__name" type="text" name="surName" id="surName" placeholder="Иванов"  required>
+              <span class="fieldset__label-name">Фамилия*:</span>
+              <input class="fieldset__input fieldset__input--name" type="text" name="surName" id="surName" placeholder="Иванов"  required>
           </label>
           <label class="fieldset__label" for="patronymic">
-              <span class="fieldset__label__name">Отчество:</span>
-              <input class="fieldset__input fieldset__input__name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+              <span class="fieldset__label-name">Отчество:</span>
+              <input class="fieldset__input fieldset__input--name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
           </label>
             </fieldset>
         <!--Поля с контактами пользователя-->
@@ -111,11 +111,11 @@
           <h2 class="fieldset__title fieldset__title--contact fieldset__title--border">Контактная информация</h2>
           <div class="fieldset__label__conteiner">
             <label class="fieldset__label fieldset__label--phone" for="review-phone">
-              <span class="fieldset__label__name fieldset__label__name--contact"><span class="fieldset__label__hidden">Контактный</span> телефон*:</span>
+              <span class="fieldset__label-name fieldset__label-name--contact"><span class="fieldset__label__hidden">Контактный</span> телефон*:</span>
               <input class="fieldset__input fieldset__input--contact" name="phone" type="tel" id="review-phone" placeholder="Введите телефон"  required>
             </label>
             <label class="fieldset__label fieldset__label--male" for="review-male">
-              <span class="fieldset__label__name fieldset__label__name--contact">Электронная почта:</span>
+              <span class="fieldset__label-name fieldset__label-name--contact">Электронная почта:</span>
               <input class="fieldset__input fieldset__input--contact" name="male" type="email" id="review-male" placeholder="Введите e-mail"  required>
             </label>
           </div>
@@ -124,16 +124,16 @@
         <fieldset class="fieldset fieldset--radio-group">
           <h2 class="fieldset__title fieldset__title--impression">Ваше общее впечатление</h2>
           <label class="fieldset__radio-label" for="review-positiv" tabindex="0">
-            <input class="fieldset__radio" type="radio" name="radio" value="positiv" id="review-positiv">
-            <span class="fieldset__radio-label__name">Скорее положительное</span>
+            <input class="fieldset__radio" type="radio" name="radio" value="positiv" id="review-positiv" checked>
+            <span class="fieldset__radio-name">Скорее положительное</span>
           </label>
           <label class="fieldset__radio-label" for="review-negativ" tabindex="0">
             <input class="fieldset__radio" type="radio" name="radio" value="negativ" id="review-negativ">
-            <span class="fieldset__radio-label__name">Скорее отрицательное</span>
+            <span class="fieldset__radio-name">Скорее отрицательное</span>
           </label>
           <label class="fieldset__radio-label" for="review-neutral" tabindex="0">
             <input class="fieldset__radio" type="radio" name="radio" value="neutral" id="review-neutral">
-            <span class="fieldset__radio-label__name">Затрудняюсь ответить</span>
+            <span class="fieldset__radio-name">Затрудняюсь ответить</span>
           </label>
         </fieldset>
         <!--Поля с выбором достопримечательностей-->
@@ -142,19 +142,19 @@
           <div class="form__conteiner-checkbox">
             <label class="fieldset__checkbox-label" for="one_check" tabindex="0">
               <input class="fieldset__checkbox" type="checkbox" name="bridge" id="one_check" checked>
-              <span class="fieldset__checkbox-label__name">Мост Дьявола</span>
+              <span class="fieldset__checkbox-name">Мост Дьявола</span>
             </label>
             <label class="fieldset__checkbox-label" for="two_check" tabindex="0">
               <input class="fieldset__checkbox" type="checkbox" name="mountain" id="two_check" checked>
-              <span class="fieldset__checkbox-label__name">Гора-Колокол</span>
+              <span class="fieldset__checkbox-name">Гора-Колокол</span>
             </label>
             <label class="fieldset__checkbox-label" for="three_check" tabindex="0">
               <input class="fieldset__checkbox" type="checkbox" name="park" id="three_check" checked>
-              <span class="fieldset__checkbox-label__name">Слайд-Парк</span>
+              <span class="fieldset__checkbox-name">Слайд-Парк</span>
             </label>
             <label class="fieldset__checkbox-label" for="four_check" tabindex="0">
               <input class="fieldset__checkbox" type="checkbox" name="rock" id="four_check">
-              <span class="fieldset__checkbox-label__name">Красные скалы</span>
+              <span class="fieldset__checkbox-name">Красные скалы</span>
             </label>
           </div>
         </fieldset>
@@ -168,20 +168,20 @@
           <button type = "submit" class="form__button page-main__button">Отправить отзыв</button>
         <span class="form__button-span">* — обязательные поля</span>
         </div>
-        <div class="form__wrapper-succes">
+        <div class="form__succes">
           <div class="form__succes-popup">
-            <h3 class="form__succes-popup__title">Ваш отзыв отправлен!</h3>
-            <p class="form__succes-popup__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br/>В ближайшее время мы опубликуем его на сайте.</p>
-            <div class="form__succes-popup__wrapper">
-              <div class="form__succes-popup__button">Закрыть окно</div>
+            <h3 class="form__succes-title">Ваш отзыв отправлен!</h3>
+            <p class="form__succes-content">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br/>В ближайшее время мы опубликуем его на сайте.</p>
+            <div class="form__succes-wrapper">
+              <div class="form__succes-button">Закрыть окно</div>
             </div>
           </div>
         </div>
-        <div class="form__wrapper-faulure">
+        <div class="form__faulure">
           <div class="form__faulure-popup">
-            <h3 class="form__faulure-popup__title">Что то пошло не так!</h3>
-            <p class="form__faulure-popup__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-              <div class="form__faulure-popup__button">ок</div>
+            <h3 class="form__faulure-title">Что то пошло не так!</h3>
+            <p class="form__faulure-content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <div class="form__faulure-button">ок</div>
           </div>
         </div>
       </form>
@@ -217,7 +217,7 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="page-footer__copyright__text">Разработано:</p>
+      <p class="page-footer__copyright-text">Разработано:</p>
       <a class= "page-footer__academy" href="https://up.htmlacademy.ru/adaptive/22">
         <svg  class= "page-footer__academy__svg" width="27" height="35" fill="black">
           <use href="img/sprite.svg#page-footer__academy"></use>

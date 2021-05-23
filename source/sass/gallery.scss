@@ -62,6 +62,10 @@
   @media (min-width: $widthTablet) {
     margin: 0;
   }
+
+  @media (min-width: $widthDesktop) {
+    color: #ffffff;
+  }
 }
 
 .gallery {
@@ -85,7 +89,7 @@
   }
 }
 
-.gallery__item__large {
+.gallery__item--large {
   @media (min-width: $widthTablet) {
     grid-column: span 2;
   }
@@ -129,12 +133,12 @@
   }
 }
 
-.gallery__info__wrapper {
+.gallery__info-wrapper {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.gallery__like__count {
+.gallery__like-count {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -145,7 +149,7 @@
   align-items: center;
 }
 
-.gallery__like__button {
+.gallery__like-button {
   padding: 0;
   margin-right: 10px;
   color: rgba(0, 0, 0, 0.3);

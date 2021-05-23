@@ -1,4 +1,4 @@
-.catalog-info {
+.catalog {
   padding-top: 28px;
   padding-left: $paddingMobile;
   padding-right: $paddingMobile;
@@ -14,13 +14,13 @@
   }
 }
 
-.catalog-info__title {
+.catalog__title {
   @media (min-width: $widthTablet) {
     font-size: 30px;
   }
 }
 
-.catalog-info__subtitle {
+.catalog__subtitle {
   margin-bottom: 25px;
   margin-top: 25px;
   max-width: 430px;

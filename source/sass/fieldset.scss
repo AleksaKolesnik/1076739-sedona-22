@@ -38,7 +38,7 @@
   }
 }
 
-.fieldset__label__name--contact {
+.fieldset__label-name--contact {
   padding-left: 20px;
 
   @media (min-width: $widthDesktop) {
@@ -53,7 +53,7 @@
   color: #000000;
 }
 
-.fieldset__input__name {
+.fieldset__input--name {
   margin-left: 15px;
 }
 
@@ -132,7 +132,7 @@
   display: none;
 }
 
-.fieldset__radio-label__name {
+.fieldset__radio-name {
   display: inline-flex;
   position: relative;
   height: 70px;
@@ -148,7 +148,7 @@
   }
 }
 
-.fieldset__label__name {
+.fieldset__label-name {
   font-size: 14px;
   text-transform: uppercase;
   display: block;
@@ -172,7 +172,7 @@
   display: none;
 }
 
-.fieldset__checkbox-label__name {
+.fieldset__checkbox-name {
   position: relative;
   height: 78px;
   padding-left: 80px;
@@ -181,7 +181,7 @@
   font-size: 18px;
 }
 
-.fieldset__checkbox-label__name::before {
+.fieldset__checkbox-name::before {
   content: "";
   width: 58px;
   height: 58px;
@@ -195,19 +195,19 @@
   background-repeat: no-repeat;
 }
 
-.fieldset__checkbox-label__name:hover::before {
+.fieldset__checkbox-name:hover::before {
   background-color: $inputBackHover;
 }
 
-.fieldset__checkbox-label:focus .fieldset__checkbox-label__name::before {
+.fieldset__checkbox-label:focus .fieldset__checkbox-name::before {
   background-color: $inputBackFocus;
 }
 
-.fieldset__checkbox-label:focus .fieldset__checkbox:checked + .fieldset__checkbox-label__name::before {
+.fieldset__checkbox-label:focus .fieldset__checkbox:checked + .fieldset__checkbox-name::before {
   background-image: url("../img/tick_down.png");
 }
 
-.fieldset__checkbox:checked + .fieldset__checkbox-label__name::before {
+.fieldset__checkbox:checked + .fieldset__checkbox-name::before {
   background-image: url("../img/tick_check.png");
 }
 
@@ -221,28 +221,28 @@
 }
 
 /*стили для не отмеченных радиобатонов*/
-.fieldset__radio-label:hover .fieldset__radio-label__name::before {
+.fieldset__radio-label:hover .fieldset__radio-name::before {
   border-color: $inputBackHover;
   background-color: $inputBackHover;
 }
 
-.fieldset__radio-label:focus .fieldset__radio-label__name::before {
+.fieldset__radio-label:focus .fieldset__radio-name::before {
   border-color: $inputBackFocus;
   background-color: $inputBackFocus;
 }
 
 /*стили для отмеченного радиобатонов*/
-.fieldset__radio:checked ~ .fieldset__radio-label__name::before {
+.fieldset__radio:checked ~ .fieldset__radio-name::before {
   border-color: $inputBack;
   background-color: #333333;
 }
 
-.fieldset__radio-label:hover .fieldset__radio:checked ~ .fieldset__radio-label__name::before {
+.fieldset__radio-label:hover .fieldset__radio:checked ~ .fieldset__radio-name::before {
   border-color: $inputBackHover;
   background-color: #333333;
 }
 
-.fieldset__radio-label:focus .fieldset__radio:checked ~ .fieldset__radio-label__name::before {
+.fieldset__radio-label:focus .fieldset__radio:checked ~ .fieldset__radio-name::before {
   background-color: #a4a4a4;
 }
 

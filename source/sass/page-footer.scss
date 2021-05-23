@@ -8,7 +8,7 @@
     align-items: center;
     padding-left: $paddingTabletForm;
     padding-right: $paddingTabletForm;
-    padding-top: 55px;
+    padding-top: 35px;
   }
 
   @media (min-width: $widthDesktop) {
@@ -29,7 +29,7 @@
   }
 }
 
-.page-footer__copyright__text {
+.page-footer__copyright-text {
   text-transform: uppercase;
   font-size: 14px;
   position: relative;
