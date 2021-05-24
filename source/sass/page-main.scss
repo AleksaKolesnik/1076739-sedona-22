@@ -180,7 +180,7 @@
 
 /*Стили для всех заголовков страниц*/
 
-.page-main-title {
+.page-main__main-title {
   text-transform: uppercase;
   text-align: center;
   font-size: $titleMobile;
@@ -192,7 +192,7 @@
   }
 }
 
-.page-main-subtitle {
+.page-main__main-subtitle {
   text-transform: uppercase;
   text-align: center;
   font-size: $subtitleMobile;
