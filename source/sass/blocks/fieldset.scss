@@ -218,6 +218,7 @@
 .fieldset__input:focus {
   background-color: #ffffff;
   border: 4px solid $inputBackHover;
+  padding-left: 18px;
 }
 
 /*стили для не отмеченных радиобатонов*/
@@ -320,6 +321,8 @@
   &:focus {
     background-color: #ffffff;
     border: 4px solid $inputBackHover;
+    padding-left: 16px;
+    padding-top: 16px;
   }
 }
 
